@@ -62,6 +62,16 @@ int main()
             top++;
             printf("top = %d\n", top);
             stack[top] = ch;
+        } else if(ch == '^'){
+            while (stack[top] == '^')
+            {
+                exp[t] = stack[top];
+                top--;
+                t++;
+            }
+            top++;
+            printf("top = %d\n", top);
+            stack[top] = ch;
         }
         else{
             printf("Error: Invalid charactor: %c\n", str[i]);
