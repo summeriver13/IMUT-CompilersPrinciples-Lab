@@ -91,4 +91,5 @@ int main()
     for (int i = 0; i < t; i++) /*打印逆波兰式*/
         printf("%c", exp[i]);
     printf("\n");
+    return 0;
 }
